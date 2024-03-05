@@ -1,0 +1,120 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    margin: 25px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.metric {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-left: 5px solid #EE5566;
+   
+}
+
+.metric h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #EE5566;
+}
+
+.metric p {
+    margin-bottom: 0;
+    color: #777;
+}
+
+.chart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+#chart1, #chart2 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Login page styles */
+.loginPage {
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    padding-top: 25%;
+}
+
+.login-form {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.usernameInput,
+.passwordInput {
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.login-form button {
+    background: #EE5566;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #a73b47;
+}
+
+.form-check {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.85em;
+    color: #777;
+}
+
+#forgotPassword {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+#forgotPassword:hover {
+    text-decoration: underline;
+}
+

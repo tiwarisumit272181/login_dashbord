@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        :root {
+            --primaryColor: #EE5566;
+            --primaryColorDark: #a73b47;
+            --primaryColorLight: #f38894;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+                monospace;
+        }
+
+        .react-datepicker-wrapper p {
+            margin-bottom: 0;
+        }
+    </style>
+    <style>
+        .loginPage {
+            width: 360px;
+            margin: auto;
+            padding-top: 25%;
+        }
+
+        .loginHeader {
+            padding-bottom: 32px;
+        }
+
+        .logo_login {
+            width: 270px;
+        }
+
+        .login-form {
+            position: relative;
+            z-index: 1;
+            max-width: 360px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+        }
+
+        .usernameInput {
+            background: #f2f2f2;
+            width: 100%;
+            border: 0;
+            border-radius: 5px 5px 0 0;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .passwordInput {
+            background: #f2f2f2;
+            width: 100%;
+            border: 0;
+            border-radius: 0 0 5px 5px;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .login-form button {
+            background: var(--primaryColor);
+            width: 100%;
+            border: 1px solid var(--primaryColor);
+            border-radius: 5px;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .login-options {
+            margin-bottom: 0;
+        }
+
+        .login-forgot {
+            float: right;
+        }
+
+        .footer {
+            margin-top: 50%;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('https://mobile.zentrades.pro/4add4d9fd5eec3467e41.png')">
+    <div id="root">
+        <div style="height: 100%;">
+            <div>
+                <div class="loginPage">
+                    <div class="login-form">
+                        <header class="loginHeader"><img src="https://mobile.zentrades.pro/3265d14152b20c422c18.svg"
+                                alt="Logo" title="Logo" class="logo_login"></header>
+                        <div>
+                            <div style="font-size: 0.8em; margin-top: 10px;"></div><input type="email"
+                                placeholder="E-mail address" class="usernameInput" id="email" value=""><input
+                                type="password" placeholder="Password" class="passwordInput" id="password" value="">
+                            <div style="font-size: 0.8em; margin-top: 10px;"></div>
+                            <div class="form-check" style="color: white; margin-bottom: 10px;"><label
+                                    class="form-check-label"><input type="checkbox" class="form-check-input" checked="">
+                                    Remember me</label></div><button onclick="validateForm()">Sign In</button>
+                        </div><br>
+                        <div><span id="forgotPassword" style="color: white; margin-top: 10px; font-size: 0.85em; cursor: pointer;">Forgot
+                                your password?</span></div>
+                        <!-- <div class="footer" id="footer">
+                            <div><a href="https://zentrades.pro/terms-of-use/" style="color: white;">Terms of Use</a>
+                            </div>
+                            <div><a href="https://zentrades.pro/privacy-policy/" style="color: white;">Privacy
+                                    Policy</a></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div id="notification-wrapper"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
